@@ -12,7 +12,9 @@ public class StreetAddress {     //Stores full street address
     public void enterStreetAddress() throws Exception { //takes input of the contacts street address
 
         while (true) {
+
             System.out.println("Please enter street number:");
+
             if (Rolodex.scanner.hasNextInt()) {
                 number = Rolodex.scanner.nextInt();
                 Rolodex.scanner.nextLine(); //nextInt() was basically entering an empty string into the streetName nextLine()
@@ -31,7 +33,9 @@ public class StreetAddress {     //Stores full street address
         state = Rolodex.scanner.nextLine();
 
         while (true) {
+
             System.out.println("Please enter zipcode:");
+
             if (Rolodex.scanner.hasNextInt()) {
                 zipcode = Rolodex.scanner.nextInt();
                 Rolodex.scanner.nextLine();     //put this one here as the next bit of code after this method is running a nextLine()

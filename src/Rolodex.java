@@ -15,7 +15,6 @@ public class Rolodex {
             QueryPrint.queryPrint();
 
             while (true) {
-
                 UserInput.userInput();
                 break;
             }
