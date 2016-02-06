@@ -15,7 +15,6 @@ public class CreateContact {
         System.out.println("Address:");
         streetAddress.enterStreetAddress();
 
-        System.out.print("Phone Number - ");
-            phoneNumber.getPhoneNumber();
+        phoneNumber.getPhoneNumber();
     }                                                //may create a class to store phone number
 }

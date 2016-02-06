@@ -8,7 +8,7 @@ public class PhoneNumber {
 
     public void getPhoneNumber() throws Exception {
 
-            System.out.print("Area code:");
+            System.out.print("Enter phone number area code: ");
 
             if (Rolodex.scanner.hasNextInt()) {
                 areaCode = Rolodex.scanner.nextInt();
@@ -17,7 +17,7 @@ public class PhoneNumber {
             else {
                     throw new Exception("Invalid Response!!!"); // exception for non int input
                 }
-            System.out.print("7 digit phone number:");
+            System.out.print("Enter 7 digit phone number: ");
 
             if (Rolodex.scanner.hasNextInt()) {
                 phoneNumber = Rolodex.scanner.nextInt();
