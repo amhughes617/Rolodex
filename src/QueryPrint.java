@@ -1,7 +1,7 @@
 /**
  * Created by alexanderhughes on 2/5/16.
  */
-public class QueryPrint {
+public class QueryPrint {   //just prints questions for user to read
     public static void queryPrint() {
         System.out.println("Would you like to...");
         System.out.println("1. Create new contact.");

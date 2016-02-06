@@ -6,7 +6,7 @@ public class CreateContact {
     StreetAddress streetAddress = new StreetAddress();
     String phoneNumber;
 
-    public void createContact() {
+    public void createContact() throws Exception {
         System.out.println("Please enter your new contact's info");
         System.out.println("Name:");
         name = Rolodex.scanner.nextLine();
