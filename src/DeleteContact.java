@@ -3,22 +3,31 @@
  */
 public class DeleteContact {
 
-    public static void deleteContact(CreateContact contact) throws Exception {
+    public static void deleteContact(CreateContact contact) {
 
         while (true) {
-
+            int choice;
             ListContacts.listContacts(contact);      //list contacts
             System.out.println("Please enter the index number of the contact you wish to delete:");
 
-            if (Rolodex.scanner.hasNextInt()) {
-                int choice = Rolodex.scanner.nextInt();
-                Rolodex.contacts.remove(choice - 1);
+            try {
+                choice = Rolodex.scanner.nextInt();
+
+                if (choice <= Rolodex.contacts.size() && choice > 0) {
+                    Rolodex.contacts.remove(choice - 1);
+                    Rolodex.scanner.nextLine();
+                    break;
+                }
+                else {
+                    System.out.println("Invalid Response!!!");
+                }
+            }
+            catch (Exception e) {
+                System.out.println("Invalid Response!!!");
                 Rolodex.scanner.nextLine();
-                break;
             }
-            else {
-                throw new Exception("Invalid Response!!!"); // exception for non int input
-            }
+
         }
+        System.out.println("Contact deleted.");
     }
 }
