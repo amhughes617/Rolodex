@@ -18,7 +18,7 @@ public class StreetAddress {     //Stores full street address
                 Rolodex.scanner.nextLine(); //nextInt() was basically entering an empty string into the streetName nextLine()
                 break;
             } else {
-                throw new Exception("Invalid Response!!!");
+                throw new Exception("Invalid Response!!!"); // exception for non int input
             }
         }
         System.out.println("Please enter street name:");
@@ -38,7 +38,7 @@ public class StreetAddress {     //Stores full street address
                 break;
             }
             else {
-                throw new Exception("Invalid Response!!!");
+                throw new Exception("Invalid Response!!!"); // exception for non int input
             }
         }
     }

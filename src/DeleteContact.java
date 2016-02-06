@@ -13,7 +13,7 @@ public class DeleteContact {
                     break;
                 }
                 else {
-                    throw new Exception("Invalid Response!!!");
+                    throw new Exception("Invalid Response!!!"); // exception for non int input
                 }
             }
     }
