@@ -3,18 +3,18 @@
  */
 public class UserInput {
 
-    public static String selection;
-
     public static void userInput() {
-
+        String selection = null;       //resets selection for each loop through method
         selection = Rolodex.scanner.nextLine();
+        CreateContact contact = new CreateContact();
 
         switch (selection) {
-            case "1":
-                //create new contact
+            case "1":                   //create new contact
+                contact.createContact();
+                Rolodex.contacts.add(contact);
                 break;
             case "2":
-                //list contacts
+                ListContacts.listContacts(contact);      //list contacts
                 break;
             case "3":
                 //delete contact
