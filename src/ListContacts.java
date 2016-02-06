@@ -1,7 +1,7 @@
 /**
  * Created by alexanderhughes on 2/5/16.
  */
-public class ListContacts {
+public class ListContacts { //handles printing out a list of all contacts
 
     public static void listContacts(CreateContact contact) {
         for (int i = 0; i < Rolodex.contacts.size(); i++) {

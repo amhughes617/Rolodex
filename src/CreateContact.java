@@ -14,5 +14,5 @@ public class CreateContact {
         streetAddress.enterStreetAddress();
         System.out.println("Phone Number:");
         phoneNumber = Rolodex.scanner.nextLine();    //stored as string instead of int so 10 digit numbers could be stored
-    }
+    }                                                //may create a class to store phone number
 }

@@ -9,7 +9,7 @@ public class StreetAddress {     //Stores full street address
     public String state;
     public int zipcode;
 
-    public void enterStreetAddress() {
+    public void enterStreetAddress() { //takes input of the contacts street address
 
         System.out.println("Please enter street number:");
         number = Rolodex.scanner.nextInt();
@@ -26,10 +26,10 @@ public class StreetAddress {     //Stores full street address
 
         System.out.println("Please enter zipcode:");
         zipcode = Rolodex.scanner.nextInt();
-        Rolodex.scanner.nextLine();
+        Rolodex.scanner.nextLine();     //put this one here as the next bit of code after this method is running a nextLine()
     }
 
-    public void printAddress() {
+    public void printAddress() { //print address is here because its variables are here making it easier to run
         System.out.print(number + " " + streetName + "   " + city + ", " + state + "  " + zipcode);
     }
 
