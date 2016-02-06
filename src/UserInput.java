@@ -13,11 +13,11 @@ public class UserInput {
                 contact.createContact();
                 Rolodex.contacts.add(contact);
                 break;
-            case "2":
+            case "2":       //displays contacts
                 ListContacts.listContacts(contact);      //list contacts
                 break;
-            case "3":
-                //delete contact
+            case "3":       //deletes selected contact
+                DeleteContact.deleteContact(contact);
                 break;
             default:
                 System.out.println("Incorrect response, please try again");
