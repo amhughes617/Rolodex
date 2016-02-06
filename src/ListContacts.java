@@ -8,8 +8,9 @@ public class ListContacts { //handles printing out a list of all contacts
             contact = (CreateContact) Rolodex.contacts.get(i);
             System.out.print((i+1) + ". " + contact.name + ": ");
             System.out.print(" Address: ");
-            contact.streetAddress.printAddress();
-            System.out.println("; Phone Number: " + contact.phoneNumber);
+            contact.streetAddress.printAddress();       //calls through contact object the streetAddress object made in CreatContact
+            System.out.print("; Phone Number: ");
+            contact.phoneNumber.printPhoneNumber();     // same as above cont.StreetAddress...
             System.out.println();
         }
     }
