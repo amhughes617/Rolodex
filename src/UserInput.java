@@ -4,7 +4,7 @@
 public class UserInput {
 
     public static void userInput() throws Exception {
-        String selection = null;       //resets selection for each loop through method
+        String selection;       //resets selection for each loop through method
         selection = Rolodex.scanner.nextLine();
         CreateContact contact = new CreateContact();
 
