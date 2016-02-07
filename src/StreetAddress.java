@@ -21,7 +21,7 @@ public class StreetAddress {     //Stores full street address
             }
             catch (Exception e) {
                 System.out.println("Invalid Response!!!");
-                Rolodex.scanner.nextLine();
+                Rolodex.scanner.nextLine();     //consumes empty line from nexInt() carriage return to prevent infinite loop of invalid responses
             }
         }
 
