@@ -3,7 +3,7 @@
  */
 public class UserInput {
 
-    public static void userInput() throws Exception {
+    public static void userInput() {
         String selection;       //resets selection for each loop through method
         selection = Rolodex.scanner.nextLine();
         CreateContact contact = new CreateContact();
