@@ -3,10 +3,9 @@
  */
 public class UserInput {
 
-    public static void userInput() {
+    public static void userInput(MngContact contact) {
         String selection;
         selection = Rolodex.scanner.nextLine();
-        CreateContact contact = new CreateContact();
 
         switch (selection) {
             case "1":                   //create new contact
@@ -14,10 +13,10 @@ public class UserInput {
                 Rolodex.contacts.add(contact);
                 break;
             case "2":       //displays contacts
-                ListContacts.listContacts(contact);      //list contacts
+                MngContact.listContacts(contact);      //list contacts
                 break;
             case "3":       //deletes selected contact
-                DeleteContact.deleteContact(contact);
+                MngContact.deleteContact(contact);
                 break;
             default:
                 System.out.println("Incorrect response, please try again");
